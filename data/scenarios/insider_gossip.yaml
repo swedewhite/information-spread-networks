@@ -1,0 +1,14 @@
+# Insider gossip scenario:
+# Information framed as exclusive / privileged spreads slowly through
+# strong-tie channels but persists for a long time. People keep whispering.
+# Edge weights are normalized to [0, 1] (tie strength relative to strongest tie).
+name: Insider Gossip
+description: >
+  Information framed as exclusive or privileged. Spreads slowly through
+  strong ties but recipients keep sharing because the information feels
+  valuable. Strong ties (heavy edges) dominate.
+beta: 0.035       # low base transmission — only strong ties activate easily
+gamma: 0.08       # low recovery — people keep telling the secret
+alpha: 3.0        # strong ties strongly amplified relative to weak ones
+steps: 30
+runs: 200

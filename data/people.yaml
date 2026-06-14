@@ -1,0 +1,223 @@
+# Synthetic influencer dataset — ENTIRELY FICTIONAL.
+#
+# Every person, company, conference, podcast, and project in this repository
+# is invented for demonstration purposes. Any resemblance to real people or
+# organizations is coincidental. See ETHICS.md for why the demo uses
+# fictional data instead of real public figures.
+#
+# The dataset is hand-designed to have interesting structure: several
+# sub-communities ("clusters") plus a handful of people who bridge them, so
+# the centrality, structural-holes, diffusion, and seed-optimization views
+# all have something to show.
+
+people:
+  # ── Orchestration / Cloud Infrastructure ───────────────────────────────
+  - id: ada-okafor
+    name: Ada Okafor
+    affiliation: Nimbus Systems
+    domains: [orchestration, open-source, cloud]
+    notes: Helmsman maintainer; known for live deploy demos
+
+  - id: rafael-mendez
+    name: Rafael Méndez
+    affiliation: Helio Cloud
+    domains: [orchestration, open-source]
+    notes: Helmsman co-creator
+
+  - id: mira-tanaka
+    name: Mira Tanaka
+    affiliation: Open Orchestration Foundation
+    domains: [orchestration, open-source]
+    notes: General Manager, OOF
+
+  - id: lucas-byrne
+    name: Lucas Byrne
+    affiliation: Cloud Commons
+    domains: [orchestration, open-source]
+    notes: CTO, Cloud Commons
+
+  - id: priya-nair
+    name: Priya Nair
+    affiliation: Halcyon (formerly OOF)
+    domains: [orchestration, cloud]
+    notes: OOF steering ambassador
+
+  - id: theo-rossi
+    name: Theo Rossi
+    affiliation: Driftwood
+    domains: [containers, open-source]
+    notes: Container runtime founder
+
+  # ── Observability / Reliability ─────────────────────────────────────────
+  - id: nadia-haddad
+    name: Nadia Haddad
+    affiliation: Lumen Observability
+    domains: [observability, databases, devops]
+    notes: CTO; observability ↔ data bridge
+
+  - id: sam-oyelaran
+    name: Sam Oyelaran
+    affiliation: Lumen Observability
+    domains: [observability, sre, devops]
+    notes: Field CTO; reliability community leader
+
+  - id: elena-fischer
+    name: Elena Fischer
+    affiliation: Tracepoint (formerly)
+    domains: [observability, distributed-systems]
+    notes: Beacon co-founder
+
+  - id: vikram-rao
+    name: Vikram Rao
+    affiliation: Independent
+    domains: [observability, distributed-systems]
+    notes: Author of Observability in Practice
+
+  - id: hana-kim
+    name: Hana Kim
+    affiliation: Strata (formerly Stratus Cloud)
+    domains: [databases, observability, distributed-systems]
+    notes: Principal engineer; storage internals
+
+  - id: tomas-ibarra
+    name: Tomás Ibarra
+    affiliation: Pinglight
+    domains: [sre, devops]
+    notes: Reliability practitioner
+
+  # ── Cloud Platforms ─────────────────────────────────────────────────────
+  - id: gregor-pavlik
+    name: Gregor Pavlik
+    affiliation: Stratus Cloud
+    domains: [cloud, distributed-systems, databases]
+    notes: CTO of Stratus Cloud
+
+  - id: dawit-bekele
+    name: Dawit Bekele
+    affiliation: Stratus Cloud
+    domains: [cloud]
+    notes: Chief Evangelist, Stratus Cloud
+
+  - id: marisol-vega
+    name: Marisol Vega
+    affiliation: Northstar (formerly Stratus Cloud)
+    domains: [cloud, microservices, sustainability]
+    notes: Microservices pioneer
+
+  - id: finn-larsson
+    name: Finn Larsson
+    affiliation: Stratus Cloud
+    domains: [cloud, security, networking]
+    notes: Distinguished Engineer
+
+  # ── Data / Databases ────────────────────────────────────────────────────
+  - id: anders-holm
+    name: Anders Holm
+    affiliation: Brightwell University
+    domains: [databases, academic]
+    notes: Brightwell Database Group
+
+  - id: irina-volkov
+    name: Irina Volkov
+    affiliation: Quill
+    domains: [databases]
+    notes: CEO Quill; founder of an earlier database company
+
+  - id: daniel-osei
+    name: Daniel Osei
+    affiliation: Cinder Labs
+    domains: [databases, distributed-systems]
+    notes: CinderDB founder
+
+  - id: rohan-mehta
+    name: Rohan Mehta
+    affiliation: Polaris Data
+    domains: [databases]
+    notes: CEO Polaris Data
+
+  - id: keiko-watanabe
+    name: Keiko Watanabe
+    affiliation: Confluence Streams
+    domains: [databases, streaming, distributed-systems]
+    notes: Streaming systems author
+
+  - id: oliver-grant
+    name: Oliver Grant
+    affiliation: Camford University
+    domains: [databases, distributed-systems, academic]
+    notes: Author of Designing Resilient Data Systems
+
+  # ── Open Source / Developer Tools / Systems ─────────────────────────────
+  - id: jonah-feld
+    name: Jonah Feld
+    affiliation: Independent (Glasswing / formerly Bastion)
+    domains: [open-source, infrastructure, developer-tools]
+    notes: Bastion founder
+
+  - id: simone-bianchi
+    name: Simone Bianchi
+    affiliation: Independent
+    domains: [containers, security, open-source]
+    notes: Container security pioneer
+
+  - id: desmond-clarke
+    name: Desmond Clarke
+    affiliation: Ironwood Computer
+    domains: [systems, hardware, open-source]
+    notes: Co-founder Ironwood; systems tracing tools
+
+  - id: yusuf-demir
+    name: Yusuf Demir
+    affiliation: The Honest Engineer
+    domains: [engineering-management, media]
+    notes: Newsletter; engineering culture
+
+  - id: wren-ashby
+    name: Wren Ashby
+    affiliation: Independent
+    domains: [ai, open-source, developer-tools]
+    notes: Open LLM tooling and data utilities
+
+  # ── AI / ML ─────────────────────────────────────────────────────────────
+  - id: leo-vasquez
+    name: Leo Vásquez
+    affiliation: Kindling Labs
+    domains: [ai, ml, education]
+    notes: Education-first AI researcher
+
+  - id: mei-lin-chou
+    name: Mei-Lin Chou
+    affiliation: Independent
+    domains: [ai, ml, mlops]
+    notes: ML systems author
+
+  - id: callum-frost
+    name: Callum Frost
+    affiliation: Open Answer
+    domains: [ai, ml, education, open-source]
+    notes: Open AI education founder
+
+  - id: aisha-bello
+    name: Aisha Bello
+    affiliation: Vertex Labs
+    domains: [ai, ml]
+    notes: Applied ML researcher
+
+  # ── Venture / Cross-cutting ─────────────────────────────────────────────
+  - id: sloane-whitaker
+    name: Sloane Whitaker
+    affiliation: Northwind Capital
+    domains: [vc, networking, infrastructure]
+    notes: General Partner, Northwind; networking pioneer
+
+  - id: camila-reyes
+    name: Camila Reyes
+    affiliation: Tidewater Ventures
+    domains: [vc, ai]
+    notes: Founder Tidewater; Overfit cohost
+
+  - id: julian-park
+    name: Julian Park
+    affiliation: Foundry Lane
+    domains: [vc, infrastructure, databases]
+    notes: General Partner, Foundry Lane

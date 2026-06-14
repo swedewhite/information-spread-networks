@@ -1,0 +1,134 @@
+# Entities the (fictional) influencers associate with — ALL INVENTED.
+# Types: conference, podcast, standards_body, board, oss_project, vc_firm, publication
+
+entities:
+  # ── Conferences ────────────────────────────────────────────────────────
+  - id: orbitconf
+    name: OrbitConf
+    type: conference
+    category: orchestration
+
+  - id: scalesummit
+    name: ScaleSummit
+    type: conference
+    category: cloud
+
+  - id: pulsecon
+    name: PulseCon
+    type: conference
+    category: observability
+
+  - id: reliabilitydays
+    name: ReliabilityDays
+    type: conference
+    category: sre
+
+  - id: sourcefest
+    name: SourceFest
+    type: conference
+    category: developer-tools
+
+  - id: querycon
+    name: QueryCon
+    type: conference
+    category: databases
+
+  - id: graphconf
+    name: GraphConf
+    type: conference
+    category: databases
+
+  - id: vectorsummit
+    name: VectorSummit
+    type: conference
+    category: ai-ml
+
+  - id: modelcon
+    name: ModelCon
+    type: conference
+    category: ai-ml
+
+  - id: devworld
+    name: DevWorld
+    type: conference
+    category: developer-tools
+
+  # ── Standards Bodies / Foundations / Boards ─────────────────────────────
+  - id: oof-steering
+    name: Open Orchestration Foundation Steering
+    type: standards_body
+    category: orchestration
+
+  - id: cloud-commons
+    name: Cloud Commons Board
+    type: board
+    category: open-source
+
+  - id: telemetry-standards
+    name: Telemetry Standards Group
+    type: standards_body
+    category: observability
+
+  # ── Podcasts ───────────────────────────────────────────────────────────
+  - id: stack-tapes
+    name: The Stack Tapes
+    type: podcast
+    category: open-source
+
+  - id: kernel-panic
+    name: Kernel Panic
+    type: podcast
+    category: systems
+
+  - id: signal-noise
+    name: Signal / Noise
+    type: podcast
+    category: observability
+
+  - id: overfit
+    name: Overfit
+    type: podcast
+    category: ai-ml
+
+  - id: shipit
+    name: Ship It Weekly
+    type: podcast
+    category: software-engineering
+
+  # ── OSS Projects (governance/maintainership) ───────────────────────────
+  - id: helmsman
+    name: Helmsman (maintainer)
+    type: oss_project
+    category: orchestration
+
+  - id: beacon
+    name: Beacon (maintainer)
+    type: oss_project
+    category: observability
+
+  # ── VC Firms ─────────────────────────────────────────────────────────────
+  - id: northwind
+    name: Northwind Capital
+    type: vc_firm
+    category: vc
+
+  - id: foundry-lane
+    name: Foundry Lane
+    type: vc_firm
+    category: vc
+
+  - id: tidewater
+    name: Tidewater Ventures
+    type: vc_firm
+    category: vc
+
+  # ── Publications / Newsletters ──────────────────────────────────────────
+  - id: honest-engineer
+    name: The Honest Engineer
+    type: publication
+    category: media
+
+  - id: systems-review
+    name: Systems Review
+    type: publication
+    category: academic

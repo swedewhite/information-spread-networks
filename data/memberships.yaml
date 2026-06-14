@@ -1,0 +1,206 @@
+# Person → Entity associations — FICTIONAL DATA (see ETHICS.md).
+#
+# weight: 1 = attendee/mentioned, 2 = recurring participant/member, 3 = keynote/governance/maintainer
+#
+# This is a hand-authored synthetic network. Bridges between clusters are
+# intentional so the brokerage and diffusion analytics have structure to find.
+
+memberships:
+  # ── Ada Okafor (orchestration ↔ open-source ↔ cloud bridge) ────────────
+  - {person: ada-okafor, entity: orbitconf, role: keynote, weight: 3}
+  - {person: ada-okafor, entity: scalesummit, role: speaker, weight: 2}
+  - {person: ada-okafor, entity: devworld, role: speaker, weight: 2}
+  - {person: ada-okafor, entity: sourcefest, role: speaker, weight: 2}
+  - {person: ada-okafor, entity: helmsman, role: maintainer, weight: 3}
+  - {person: ada-okafor, entity: stack-tapes, role: guest, weight: 2}
+  - {person: ada-okafor, entity: shipit, role: guest, weight: 2}
+
+  # ── Rafael Méndez ──────────────────────────────────────────────────────
+  - {person: rafael-mendez, entity: orbitconf, role: keynote, weight: 3}
+  - {person: rafael-mendez, entity: helmsman, role: co-creator, weight: 3}
+  - {person: rafael-mendez, entity: devworld, role: speaker, weight: 2}
+
+  # ── Mira Tanaka ────────────────────────────────────────────────────────
+  - {person: mira-tanaka, entity: orbitconf, role: keynote, weight: 3}
+  - {person: mira-tanaka, entity: oof-steering, role: gm, weight: 3}
+  - {person: mira-tanaka, entity: cloud-commons, role: member, weight: 2}
+
+  # ── Lucas Byrne ────────────────────────────────────────────────────────
+  - {person: lucas-byrne, entity: orbitconf, role: speaker, weight: 2}
+  - {person: lucas-byrne, entity: oof-steering, role: cto, weight: 3}
+  - {person: lucas-byrne, entity: cloud-commons, role: cto, weight: 3}
+  - {person: lucas-byrne, entity: stack-tapes, role: guest, weight: 1}
+
+  # ── Priya Nair ─────────────────────────────────────────────────────────
+  - {person: priya-nair, entity: orbitconf, role: keynote, weight: 3}
+  - {person: priya-nair, entity: oof-steering, role: ambassador, weight: 2}
+  - {person: priya-nair, entity: helmsman, role: contributor, weight: 1}
+
+  # ── Theo Rossi ─────────────────────────────────────────────────────────
+  - {person: theo-rossi, entity: orbitconf, role: speaker, weight: 2}
+  - {person: theo-rossi, entity: cloud-commons, role: contributor, weight: 1}
+  - {person: theo-rossi, entity: stack-tapes, role: guest, weight: 2}
+  - {person: theo-rossi, entity: kernel-panic, role: guest, weight: 1}
+
+  # ── Nadia Haddad (observability ↔ databases bridge) ────────────────────
+  - {person: nadia-haddad, entity: pulsecon, role: keynote, weight: 3}
+  - {person: nadia-haddad, entity: reliabilitydays, role: keynote, weight: 3}
+  - {person: nadia-haddad, entity: signal-noise, role: cohost, weight: 3}
+  - {person: nadia-haddad, entity: telemetry-standards, role: contributor, weight: 1}
+  - {person: nadia-haddad, entity: querycon, role: speaker, weight: 2}
+  - {person: nadia-haddad, entity: shipit, role: guest, weight: 2}
+  - {person: nadia-haddad, entity: honest-engineer, role: featured, weight: 2}
+
+  # ── Sam Oyelaran ───────────────────────────────────────────────────────
+  - {person: sam-oyelaran, entity: reliabilitydays, role: keynote, weight: 3}
+  - {person: sam-oyelaran, entity: pulsecon, role: speaker, weight: 2}
+  - {person: sam-oyelaran, entity: signal-noise, role: cohost, weight: 3}
+  - {person: sam-oyelaran, entity: orbitconf, role: speaker, weight: 2}
+  - {person: sam-oyelaran, entity: telemetry-standards, role: contributor, weight: 2}
+
+  # ── Elena Fischer ──────────────────────────────────────────────────────
+  - {person: elena-fischer, entity: telemetry-standards, role: cofounder, weight: 3}
+  - {person: elena-fischer, entity: beacon, role: maintainer, weight: 3}
+  - {person: elena-fischer, entity: orbitconf, role: speaker, weight: 2}
+  - {person: elena-fischer, entity: pulsecon, role: speaker, weight: 2}
+
+  # ── Vikram Rao ─────────────────────────────────────────────────────────
+  - {person: vikram-rao, entity: pulsecon, role: speaker, weight: 2}
+  - {person: vikram-rao, entity: reliabilitydays, role: speaker, weight: 2}
+  - {person: vikram-rao, entity: systems-review, role: author, weight: 2}
+
+  # ── Hana Kim (databases ↔ observability ↔ cloud bridge) ────────────────
+  - {person: hana-kim, entity: pulsecon, role: speaker, weight: 2}
+  - {person: hana-kim, entity: beacon, role: maintainer, weight: 2}
+  - {person: hana-kim, entity: scalesummit, role: speaker, weight: 2}
+  - {person: hana-kim, entity: querycon, role: speaker, weight: 2}
+  - {person: hana-kim, entity: systems-review, role: author, weight: 1}
+
+  # ── Tomás Ibarra ───────────────────────────────────────────────────────
+  - {person: tomas-ibarra, entity: reliabilitydays, role: speaker, weight: 2}
+  - {person: tomas-ibarra, entity: signal-noise, role: guest, weight: 1}
+  - {person: tomas-ibarra, entity: shipit, role: guest, weight: 1}
+
+  # ── Gregor Pavlik ──────────────────────────────────────────────────────
+  - {person: gregor-pavlik, entity: scalesummit, role: keynote, weight: 3}
+  - {person: gregor-pavlik, entity: systems-review, role: editor, weight: 3}
+  - {person: gregor-pavlik, entity: devworld, role: speaker, weight: 2}
+
+  # ── Dawit Bekele ───────────────────────────────────────────────────────
+  - {person: dawit-bekele, entity: scalesummit, role: chief-evangelist, weight: 3}
+  - {person: dawit-bekele, entity: devworld, role: speaker, weight: 1}
+
+  # ── Marisol Vega (cloud ↔ observability bridge) ────────────────────────
+  - {person: marisol-vega, entity: scalesummit, role: speaker, weight: 2}
+  - {person: marisol-vega, entity: pulsecon, role: speaker, weight: 2}
+  - {person: marisol-vega, entity: reliabilitydays, role: speaker, weight: 2}
+  - {person: marisol-vega, entity: shipit, role: guest, weight: 2}
+  - {person: marisol-vega, entity: honest-engineer, role: featured, weight: 1}
+
+  # ── Finn Larsson ───────────────────────────────────────────────────────
+  - {person: finn-larsson, entity: scalesummit, role: keynote, weight: 3}
+  - {person: finn-larsson, entity: cloud-commons, role: contributor, weight: 1}
+
+  # ── Anders Holm ────────────────────────────────────────────────────────
+  - {person: anders-holm, entity: querycon, role: keynote, weight: 3}
+  - {person: anders-holm, entity: graphconf, role: speaker, weight: 2}
+  - {person: anders-holm, entity: systems-review, role: author, weight: 2}
+  - {person: anders-holm, entity: shipit, role: guest, weight: 2}
+
+  # ── Irina Volkov ───────────────────────────────────────────────────────
+  - {person: irina-volkov, entity: querycon, role: keynote, weight: 3}
+  - {person: irina-volkov, entity: scalesummit, role: speaker, weight: 1}
+  - {person: irina-volkov, entity: honest-engineer, role: featured, weight: 1}
+
+  # ── Daniel Osei ────────────────────────────────────────────────────────
+  - {person: daniel-osei, entity: querycon, role: keynote, weight: 3}
+  - {person: daniel-osei, entity: graphconf, role: speaker, weight: 2}
+  - {person: daniel-osei, entity: systems-review, role: author, weight: 1}
+  - {person: daniel-osei, entity: shipit, role: guest, weight: 1}
+
+  # ── Rohan Mehta ────────────────────────────────────────────────────────
+  - {person: rohan-mehta, entity: querycon, role: keynote, weight: 3}
+  - {person: rohan-mehta, entity: scalesummit, role: speaker, weight: 1}
+
+  # ── Keiko Watanabe ─────────────────────────────────────────────────────
+  - {person: keiko-watanabe, entity: querycon, role: speaker, weight: 2}
+  - {person: keiko-watanabe, entity: graphconf, role: speaker, weight: 1}
+  - {person: keiko-watanabe, entity: systems-review, role: author, weight: 2}
+
+  # ── Oliver Grant ───────────────────────────────────────────────────────
+  - {person: oliver-grant, entity: querycon, role: keynote, weight: 3}
+  - {person: oliver-grant, entity: graphconf, role: keynote, weight: 3}
+  - {person: oliver-grant, entity: systems-review, role: author, weight: 2}
+  - {person: oliver-grant, entity: shipit, role: guest, weight: 2}
+
+  # ── Jonah Feld ─────────────────────────────────────────────────────────
+  - {person: jonah-feld, entity: stack-tapes, role: guest, weight: 2}
+  - {person: jonah-feld, entity: kernel-panic, role: guest, weight: 2}
+  - {person: jonah-feld, entity: devworld, role: speaker, weight: 2}
+  - {person: jonah-feld, entity: shipit, role: guest, weight: 1}
+
+  # ── Simone Bianchi (open-source ↔ orchestration bridge) ────────────────
+  - {person: simone-bianchi, entity: orbitconf, role: speaker, weight: 2}
+  - {person: simone-bianchi, entity: sourcefest, role: speaker, weight: 2}
+  - {person: simone-bianchi, entity: kernel-panic, role: guest, weight: 2}
+  - {person: simone-bianchi, entity: stack-tapes, role: guest, weight: 2}
+
+  # ── Desmond Clarke ─────────────────────────────────────────────────────
+  - {person: desmond-clarke, entity: kernel-panic, role: cohost, weight: 3}
+  - {person: desmond-clarke, entity: sourcefest, role: keynote, weight: 3}
+  - {person: desmond-clarke, entity: stack-tapes, role: guest, weight: 2}
+  - {person: desmond-clarke, entity: systems-review, role: author, weight: 2}
+
+  # ── Yusuf Demir (media hub) ────────────────────────────────────────────
+  - {person: yusuf-demir, entity: honest-engineer, role: founder, weight: 3}
+  - {person: yusuf-demir, entity: shipit, role: guest, weight: 2}
+  - {person: yusuf-demir, entity: devworld, role: speaker, weight: 1}
+
+  # ── Wren Ashby (AI ↔ open-source bridge) ───────────────────────────────
+  - {person: wren-ashby, entity: stack-tapes, role: guest, weight: 2}
+  - {person: wren-ashby, entity: shipit, role: guest, weight: 2}
+  - {person: wren-ashby, entity: honest-engineer, role: featured, weight: 2}
+  - {person: wren-ashby, entity: sourcefest, role: speaker, weight: 1}
+  - {person: wren-ashby, entity: overfit, role: guest, weight: 1}
+
+  # ── Leo Vásquez ────────────────────────────────────────────────────────
+  - {person: leo-vasquez, entity: vectorsummit, role: keynote, weight: 3}
+  - {person: leo-vasquez, entity: modelcon, role: keynote, weight: 3}
+  - {person: leo-vasquez, entity: overfit, role: guest, weight: 2}
+
+  # ── Mei-Lin Chou ───────────────────────────────────────────────────────
+  - {person: mei-lin-chou, entity: vectorsummit, role: speaker, weight: 2}
+  - {person: mei-lin-chou, entity: modelcon, role: speaker, weight: 2}
+  - {person: mei-lin-chou, entity: overfit, role: guest, weight: 1}
+  - {person: mei-lin-chou, entity: shipit, role: guest, weight: 2}
+  - {person: mei-lin-chou, entity: honest-engineer, role: featured, weight: 1}
+
+  # ── Callum Frost (AI ↔ open-source bridge) ─────────────────────────────
+  - {person: callum-frost, entity: vectorsummit, role: speaker, weight: 2}
+  - {person: callum-frost, entity: modelcon, role: speaker, weight: 2}
+  - {person: callum-frost, entity: overfit, role: guest, weight: 2}
+  - {person: callum-frost, entity: stack-tapes, role: guest, weight: 2}
+
+  # ── Aisha Bello ────────────────────────────────────────────────────────
+  - {person: aisha-bello, entity: vectorsummit, role: speaker, weight: 2}
+  - {person: aisha-bello, entity: modelcon, role: speaker, weight: 1}
+  - {person: aisha-bello, entity: overfit, role: guest, weight: 1}
+
+  # ── Sloane Whitaker (venture ↔ everything bridge) ──────────────────────
+  - {person: sloane-whitaker, entity: northwind, role: gp, weight: 3}
+  - {person: sloane-whitaker, entity: orbitconf, role: speaker, weight: 1}
+  - {person: sloane-whitaker, entity: scalesummit, role: speaker, weight: 1}
+  - {person: sloane-whitaker, entity: overfit, role: guest, weight: 2}
+  - {person: sloane-whitaker, entity: honest-engineer, role: featured, weight: 1}
+
+  # ── Camila Reyes ───────────────────────────────────────────────────────
+  - {person: camila-reyes, entity: tidewater, role: founder, weight: 3}
+  - {person: camila-reyes, entity: overfit, role: cohost, weight: 3}
+  - {person: camila-reyes, entity: vectorsummit, role: attendee, weight: 1}
+
+  # ── Julian Park (venture ↔ cloud ↔ data bridge) ────────────────────────
+  - {person: julian-park, entity: foundry-lane, role: gp, weight: 3}
+  - {person: julian-park, entity: scalesummit, role: speaker, weight: 1}
+  - {person: julian-park, entity: querycon, role: speaker, weight: 1}
+  - {person: julian-park, entity: overfit, role: guest, weight: 1}
+  - {person: julian-park, entity: honest-engineer, role: featured, weight: 1}
