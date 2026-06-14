@@ -25,7 +25,8 @@ from src import graph, centrality, diffusion, optimize, dashboard
 
 ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
-OUTPUT_PATH = ROOT / "output" / "dashboard.html"
+# Rendered into docs/ so GitHub Pages can serve it directly as the site index.
+OUTPUT_PATH = ROOT / "docs" / "index.html"
 
 
 def load_scenario(name: str) -> dict:

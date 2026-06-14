@@ -1,6 +1,12 @@
 # Modeling Information Spread in Networks
 
-A toolkit for understanding how information moves through a network defined by **affiliations** — who belongs to what — and who is structurally positioned to move it. From membership metadata alone (no message content), it computes who bridges otherwise-disconnected communities, simulates how information would spread through informal channels versus public broadcast, and finds the smallest set of people who would seed the widest reach.
+A domain-agnostic toolkit for analyzing how information moves through a network of **affiliations** — who bridges communities, who is best positioned to move information, and how it spreads through informal channels versus public broadcast.
+
+**▶ [Explore the live interactive dashboard →](https://swedewhite.github.io/information-spread-networks/)**
+
+[![Interactive dashboard — affiliation network, centrality rankings, and diffusion simulation](assets/dashboard-preview.png)](https://swedewhite.github.io/information-spread-networks/)
+
+From membership metadata alone (no message content), it computes who bridges otherwise-disconnected communities, simulates how information would spread under different framings, and finds the smallest set of people who would seed the widest reach.
 
 The method is **domain-agnostic**. Any network of people-and-affiliations works: academic co-authorship and committees, political coalitions, club and board memberships, professional communities. The dataset shipped here is a tech-style ecosystem (conferences, podcasts, open-source projects, investors), but that's just one illustrative example — swap in your own.
 
@@ -31,7 +37,8 @@ information-spread-networks/
 │   ├── optimize.py          # CELF greedy influence-maximization
 │   └── dashboard.py         # HTML/D3.js dashboard generator (8 sections)
 ├── main.py                  # Orchestrator
-└── output/dashboard.html    # Generated single-page interactive dashboard
+├── docs/index.html          # Generated dashboard — also the GitHub Pages site
+└── assets/                  # README preview image
 ```
 
 ## Running
@@ -52,7 +59,7 @@ python3 main.py --open
 
 ## Dashboard Sections
 
-The generated `output/dashboard.html` is a single self-contained HTML file with eight interactive D3.js sections:
+The generated `docs/index.html` is a single self-contained HTML file with eight interactive D3.js sections (this is exactly what the [live demo](https://swedewhite.github.io/information-spread-networks/) serves):
 
 | # | Section | What it shows |
 |---|---------|---------------|
