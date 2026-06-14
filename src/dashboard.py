@@ -253,9 +253,9 @@ nav a.active { border-bottom: 2px solid var(--accent); }
 .metric-card .delta.up { color: var(--green); }
 
 .heatmap-container { margin-top: 1rem; }
-#overlap { max-width: 1700px; }
+#overlap { max-width: 1600px; }
 #heatmapGraph { width: 100%; overflow-x: auto; overflow-y: hidden; }
-#heatmapGraph svg { width: auto; max-width: none; }
+#heatmapGraph svg { width: auto; max-width: none; margin: 0 auto; }
 
 .tooltip {
   position: fixed; pointer-events: none;
@@ -1072,8 +1072,8 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
   const labels = DATA.entityNames;
   const labelTypes = DATA.entityTypes;
   const n = labels.length;
-  const cellSize = 75;
-  const margin = { top: 220, right: 40, bottom: 50, left: 290 };
+  const cellSize = 52;
+  const margin = { top: 175, right: 30, bottom: 40, left: 235 };
   const W = margin.left + n * cellSize + margin.right;
   const H = margin.top + n * cellSize + margin.bottom;
 
@@ -1122,7 +1122,7 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
     .attr('y', d => y(d.y) + y.bandwidth()/2)
     .attr('text-anchor', 'middle').attr('dy', '0.35em')
     .attr('fill', d => d.value/maxVal > 0.5 ? '#fff' : '#8899aa')
-    .attr('font-size', '16px').attr('font-weight', 600)
+    .attr('font-size', '14px').attr('font-weight', 600)
     .attr('pointer-events', 'none')
     .text(d => d.value);
 
@@ -1133,7 +1133,7 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
     .attr('y', -10).attr('text-anchor', 'end')
     .attr('transform', d => `rotate(-45, ${x(d) + x.bandwidth()/2}, -10)`)
     .attr('fill', d => ENTITY_TYPE_COLORS[labelTypes[d]] || '#8899aa')
-    .attr('font-size', '14px').attr('font-weight', 500)
+    .attr('font-size', '12px').attr('font-weight', 500)
     .text(d => d);
 
   g.selectAll('text.yLabel')
@@ -1142,7 +1142,7 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
     .attr('x', -10).attr('y', d => y(d) + y.bandwidth()/2)
     .attr('text-anchor', 'end').attr('dy', '0.35em')
     .attr('fill', d => ENTITY_TYPE_COLORS[labelTypes[d]] || '#8899aa')
-    .attr('font-size', '14px').attr('font-weight', 500)
+    .attr('font-size', '12px').attr('font-weight', 500)
     .text(d => d);
 })();
 
