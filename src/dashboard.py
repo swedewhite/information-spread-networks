@@ -253,7 +253,7 @@ nav a.active { border-bottom: 2px solid var(--accent); }
 .metric-card .delta.up { color: var(--green); }
 
 .heatmap-container { margin-top: 1rem; }
-#overlap { max-width: 1600px; }
+#overlap { max-width: 1640px; }
 #heatmapGraph { width: 100%; overflow-x: auto; overflow-y: hidden; }
 #heatmapGraph svg { width: auto; max-width: none; margin: 0 auto; }
 
@@ -1072,8 +1072,8 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
   const labels = DATA.entityNames;
   const labelTypes = DATA.entityTypes;
   const n = labels.length;
-  const cellSize = 52;
-  const margin = { top: 175, right: 30, bottom: 40, left: 235 };
+  const cellSize = 50;
+  const margin = { top: 205, right: 55, bottom: 40, left: 255 };
   const W = margin.left + n * cellSize + margin.right;
   const H = margin.top + n * cellSize + margin.bottom;
 
@@ -1130,7 +1130,7 @@ window.resetCentrality = () => centralitySim.alpha(0.5).restart();
     .data(labels).join('text')
     .attr('class', 'xLabel')
     .attr('x', d => x(d) + x.bandwidth()/2)
-    .attr('y', -10).attr('text-anchor', 'end')
+    .attr('y', -10).attr('text-anchor', 'start')
     .attr('transform', d => `rotate(-45, ${x(d) + x.bandwidth()/2}, -10)`)
     .attr('fill', d => ENTITY_TYPE_COLORS[labelTypes[d]] || '#8899aa')
     .attr('font-size', '12px').attr('font-weight', 500)
