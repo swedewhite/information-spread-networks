@@ -559,7 +559,9 @@ nav a.active { border-bottom: 2px solid var(--accent); }
     <h2>Seed Optimization</h2>
     <p>If you could give exclusive information to N people to maximize spread,
     who would you pick? The greedy algorithm answers this — but the answer depends
-    heavily on what kind of information it is.</p>
+    heavily on what kind of information it is. These optimal seeds are usually
+    <em>not</em> the top brokers above: structural centrality (who bridges communities)
+    and diffusion reach (who spreads to the most people) are different things.</p>
   </div>
   <div class="dual-graph" style="margin-top: 1rem;">
     <div class="graph-container" id="seedGraph" style="min-height:540px;">

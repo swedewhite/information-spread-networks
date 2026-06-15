@@ -26,6 +26,10 @@ The intended use is structural understanding — answering questions like "which
 
 - **Not a model of platform dynamics.** Information spread through social media, group chats, and in-person conversation has very different mechanics than a uniform contagion process. The simulation is a conceptual abstraction, not a forecast.
 
+## On not making the model more sophisticated
+
+It is tempting to add trust, credibility, and platform dynamics to the diffusion model — they are real forces. We tested doing exactly that ([`experiments/`](experiments/README.md)) and deliberately did not ship it. In a network built from a single source of affiliation metadata, those factors collapse onto the same co-participation signal, so adding them would be false precision rather than insight. And a credibility-weighted seed optimizer is, functionally, a tool for selecting a community's most-trusted voices as delivery vehicles — the manufactured-consensus misuse this document exists to discourage. The model stays deliberately simple so that its limits stay visible.
+
 ## If you supply real data
 
 Every association should be derived from genuinely public information — conference programs, published board/committee membership, podcast feeds, OSS governance documents, public newsletters. No private data, no scraping of protected sources, no inference from non-public signals.

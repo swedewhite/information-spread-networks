@@ -118,6 +118,8 @@ Implements greedy + CELF (Cost-Effective Lazy Forward, Leskovec 2007) influence 
 
 For each candidate node, we Monte-Carlo-estimate the marginal gain in reach when added to the current seed set. The CELF priority queue avoids re-evaluating candidates whose previous gain was already lower than another candidate's new gain.
 
+**The optimal seed set is not the list of top brokers.** Structural centrality (who bridges communities) and diffusion reach (who spreads to the most people) are different quantities — in experiments on this dataset, the highest-betweenness nodes are never the reach-optimal seeds. See [`experiments/`](experiments/README.md) for that and a deeper investigation into why the model is kept deliberately simple.
+
 ## Origin Story
 
 This project was forked in spirit from [`paulrevere`](https://github.com/swedewhite/paulrevere), which ports a 2017 Wolfram Language analysis of colonial Boston revolutionary networks (Kieran Healy's "Using Metadata to Find Paul Revere") to Python + D3.js. The original demonstrated how membership-list metadata, with no message content at all, was sufficient to identify the most dangerous revolutionaries in 1770s Boston. This project generalizes that analytical framework to arbitrary affiliation networks, with the addition of dynamic information-diffusion modeling.
