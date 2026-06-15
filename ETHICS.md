@@ -58,4 +58,4 @@ And then:
 
 ## If something here makes you uncomfortable
 
-That is a signal worth listening to. Stop, talk to someone you trust, and reconsider whether the use case you have in mind is one this tool should support.
+Stop.
